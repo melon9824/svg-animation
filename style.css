@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#heart {
+    animation: myHeart 4s linear infinite;
+    transform-box: fill-box;
+    /* fill: #ff000096; */
+}
+
+@keyframes myHeart {
+    from {
+        translate: 0 3rem;
+        scale: 0.8;
+    } to {
+        translate: 0 -1rem;
+        scale: 0.3;
+    }
+}
+
+#plant {
+    animation: myPlant 4s linear infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes myPlant {
+    from {
+        scale: 0.3;
+    } to {
+        scale: 1.8;
+    }
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #333;
+    color: #ddd;
+    font-size: .75rem;
+    padding: 1rem 0;
+    margin-top: 6.2rem;
+}
